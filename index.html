@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RankedVote: Online Ranked-Choice Voting Polls</title>
+
+		<link
+			rel="shortcut icon"
+			href="assets/favicon-32x32.png"
+			type="image/x-icon" />
+		<link rel="apple-touch-icon" href="assets/favicon_check_256x256.png" />
+
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-white">
+			<div class="container-fluid mx-3 mx-lg-5 py-3 px-1">
+				<!-- Logo on the left -->
+				<a class="navbar-brand" href="#">
+					<img
+						src="./assets/images/logo.svg"
+						alt=""
+						class="d-inline-block align-text-top img-fluid logo" />
+				</a>
+
+				<!-- Toggler button for small screens -->
+				<button
+					class="navbar-toggler border-0"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Menu on the right -->
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNavDropdown">
+					<ul class="navbar-nav mt-3 mt-lg-0">
+						<li class="nav-item dropdown pe-3 border-end d-none d-lg-inline">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false">
+								Solutions
+							</a>
+							<ul class="dropdown-menu pe-5 pt-3 mt-1 border border-2 shadow">
+								<li>
+									<h6 class="dropdown-header text-blue-violet-2">
+										Why RANKEDVOTE?
+									</h6>
+								</li>
+								<li><a class="dropdown-item ms-2" href="#">Run Contests</a></li>
+								<li>
+									<a class="dropdown-item ms-2" href="#">Make Decisions</a>
+								</li>
+								<li>
+									<a class="dropdown-item ms-2" href="#">Educate Votes</a>
+								</li>
+								<li>
+									<a class="dropdown-item ms-2" href="#">Team Collaboration</a>
+								</li>
+								<li>
+									<a class="dropdown-item ms-2" href="#">Bulk Programs</a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-3" href="#">Demo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-3" href="#">Stories</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-3" href="#">Guides</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-3" href="#">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-3" href="#">Log In</a>
+						</li>
+						<li class="nav-item d-none d-lg-inline">
+							<a
+								class="nav-link px-5 py-2 text-white rounded-5 btn-blue-violet"
+								href="#"
+								>Sign Up</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="py-5 bg-blue-violet hero">
+			<div class="container my-4 py-5">
+				<div class="row">
+					<div
+						class="col-md-7 d-flex flex-column justify-content-center text-white text-center text-md-start">
+						<h1 class="fs-6 fw-bold text-blue-violet">
+							ONLINE RANKED CHOICE VOTING APP
+						</h1>
+						<p class="fw-bold display-1 fs-xl">
+							The ranked choice platform for
+							<span class="typed-words">making decisions</span>
+						</p>
+						<p class="lead fs-6">
+							Uncover your group's preferences. Get instant results. All with
+							greater accuracy and fidelity than traditional voting methods.
+						</p>
+						<div>
+							<a href="#" class="btn btn-orange text-white rounded-5 px-5">
+								Get Started
+							</a>
+						</div>
+					</div>
+					<div class="col-md-5 mt-5">
+						<div class="d-flex justify-content-center justify-content-md-end">
+							<img
+								src="./assets/images/hero-1.svg"
+								alt=""
+								class="img-fluid rounded-3 shadow-lg"
+								width="400" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Clients Section -->
+		<section class="py-5 bg-white">
+			<div class="container">
+				<h2
+					class="text-center fs-6 fw-bold text-light-slate-grey text-uppercase">
+					TRUSTED BY TOP ORGANIZATIONS
+				</h2>
+				<div
+					class="d-flex justify-content-between align-items-center flex-wrap g-5 mx-auto my-3">
+					<div class="col-12 col-sm-6 col-md-2">
+						<img
+							src="./assets/images/organizations/adobe.png"
+							alt="adobe"
+							height="30"
+							class="client-img" />
+					</div>
+					<div class="col-12 col-sm-6 col-md-2">
+						<img
+							src="./assets/images/organizations/wild-card.png"
+							alt="wild-card"
+							width="100"
+							class="client-img" />
+					</div>
+					<div class="col-12 col-sm-6 col-md-2">
+						<img
+							src="./assets/images/organizations/target.png"
+							alt="target"
+							height="30"
+							class="client-img" />
+					</div>
+					<div class="col-12 col-sm-6 col-md-2">
+						<img
+							src="./assets/images/organizations/grafana.png"
+							alt="grafana"
+							width="100"
+							class="client-img" />
+					</div>
+					<div class="col-12 col-sm-6 col-md-2">
+						<img
+							src="./assets/images/organizations/spotify.png"
+							alt="spotify"
+							height="30"
+							class="client-img" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Demos Section -->
+		<section class="py-5 bg-ghost-white border-top border-bottom">
+			<div
+				class="container d-flex flex-column flex-lg-row align-items-center justify-content-between shadow px-5 py-4 border border-warning rounded-3">
+				<p class="fs-6 mb-4 mb-lg-0 text-center">
+					See live demos of ranked-choice elections, contests, and polls using
+					RankedVote!
+				</p>
+
+				<a href="#" class="btn btn-orange-outline rounded-5 px-5">
+					View Demos
+				</a>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section class="py-5 bg-white">
+			<div class="container">
+				<h2
+					class="text-center fs-6 fw-bold text-light-slate-grey text-uppercase">
+					Key Features
+				</h2>
+				<p class="text-center fs-1 fs-bolder text-midnight-blue">
+					The best way to use ranked choice voting online.
+				</p>
+
+				<div class="seperator"></div>
+
+				<div class="row mt-5">
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/code.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Embed on Your Site
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Seamlessly integrate ranked choice contests on your page.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/reward.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Unlimited Candidates
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Voters can choose from a broad array of choices in each
+									contest.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/user.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Unlimited Voters
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Reach your voters. Even if there's 100,000 of them.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/duplicate.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Duplicate Detection
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Filter out votes that may not be unique.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row mt-5">
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/lock.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Private Results
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Make sure the outcome isn't revealed until you want it to be.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/upward.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Custom Call to Action
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Send voters to any website after they vote.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/file.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Detailed Profiles
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Flesh out choices with detailed descriptions and pictures.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-6 col-md-3">
+						<div class="card border-0 feature rounded-3">
+							<img
+								src="./assets/images/icons/phone.svg"
+								alt=""
+								width="60"
+								class="rounded-circle mx-auto mt-3 feature-icon" />
+							<div class="card-body text-center">
+								<h5 class="card-title fs-6 fw-bold text-dark-blue">
+									Highly Accessible
+								</h5>
+								<p class="card-text fs-6 text-dark-slate-blue">
+									Device friendly. Screen Reader friendly. Language friendly.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Counts Section -->
+		<section class="py-5">
+			<div class="container mt-5">
+				<img
+					src="./assets/images/section-1.svg"
+					alt=""
+					class="img-fluid w-100 shadow-lg z-0 position-relative" />
+			</div>
+			<div class="bg-blue-violet py-5 counts-container z-1 position-relative">
+				<div class="container py-5">
+					<div
+						class="d-flex flex-column flex-md-row align-items-center justify-content-around">
+						<div class="border-0 rounded-3 text-center">
+							<h2 class="display-3 fw-bold text-white">51,471</h2>
+							<p class="fs-6 text-white">Elections created</p>
+						</div>
+
+						<div class="border-0 rounded-3 text-center">
+							<h2 class="display-3 fw-bold text-white">1,260,285</h2>
+							<p class="fs-6 text-white">Voters</p>
+						</div>
+
+						<div class="border-0 rounded-3 text-center">
+							<h2 class="display-3 fw-bold text-white">270,615</h2>
+							<p class="fs-6 text-white">Candidates ranked</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Working Section -->
+		<section class="py-5 bg-white">
+			<div class="container pt-5">
+				<h2
+					class="text-center fs-6 fw-bold text-light-slate-grey text-uppercase">
+					HOW RANKED CHOICE VOTING WORKS
+				</h2>
+				<p class="text-center fs-1 fs-bolder text-midnight-blue">
+					Voters rank once. Strongest support wins.
+				</p>
+
+				<div class="seperator"></div>
+
+				<div class="row mt-5">
+					<div class="col-md-4">
+						<div class="card border-0 feature rounded-3 py-4 px-md-4">
+							<div
+								class="work-icon text-center rounded-circle mx-auto fw-bold fs-3 bg-orange text-white">
+								1
+							</div>
+							<div class="card-body text-center">
+								<h5 class="card-title fs-5 fw-bold text-dark-blue">
+									Voters rank ballots
+								</h5>
+								<p class="card-text text-dark-slate-blue">
+									Each voter selects their most preferred choices on the ballot.
+									First, second, third, and so on.
+								</p>
+								<p class="card-text text-dark-slate-blue">
+									In the first round, the top ranked choices are counted to
+									determine if a choice received enough votes to win.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card border-0 feature rounded-3 py-4 px-md-4">
+							<div
+								class="work-icon text-center rounded-circle mx-auto fw-bold fs-3 bg-cornflower-blue text-white">
+								2
+							</div>
+							<div class="card-body text-center">
+								<h5 class="card-title fs-5 fw-bold text-dark-blue">
+									Lowest vote getters are eliminated
+								</h5>
+								<p class="card-text text-dark-slate-blue">
+									If no choice gets enough votes to win, the choice with the
+									least votes is eliminated.
+								</p>
+								<p class="card-text text-dark-slate-blue">
+									Those who voted for an eliminated choice have their vote
+									redistributed to their next choice in the following round.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="card border-0 feature rounded-3 py-4 px-md-4">
+							<div
+								class="work-icon text-center rounded-circle mx-auto fw-bold fs-3 bg-dark-green text-white">
+								3
+							</div>
+							<div class="card-body text-center">
+								<h5 class="card-title fs-5 fw-bold text-dark-blue">
+									Repeat until a winner is found
+								</h5>
+								<p class="card-text text-dark-slate-blue">
+									In the next round, the redistributed votes are added to the
+									remaining choices' totals.
+								</p>
+								<p class="card-text text-dark-slate-blue">
+									The elimination and redistribution process repeats
+									automatically until a choice receives enough votes to win.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Testimoial Section -->
+		<section class="py-5 bg-blue-violet">
+			<!-- Slider main container -->
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="slide">
+							<p class="fs-4 text-white text-center lh-sm">
+								<span class="d-block mb-4">
+									"Our community contest received tens of thousands of votes in
+									a matter of days. No problems. Any questions we had were
+									promptly answered.
+								</span>
+
+								RankedVote handled the scale easily and with all the pro/premium
+								features, there really is no other competitor."
+							</p>
+
+							<div class="text-center">
+								<img
+									src="./assets/images/testimonials/1.jpeg"
+									alt=""
+									width="100"
+									class="rounded-circle me-3 border border-2 border-white testimonial-img" />
+								<div class="text-silver-2 mt-3">
+									<p class="fs-6 mb-0">JAT KARUNAKARAN</p>
+									<p class="fs-6 mb-0">
+										SENIOR PRODUCT MANAGER, STUDIO WILDCARD
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="slide">
+							<p class="fs-4 text-white text-center lh-sm">
+								<span class="d-block mb-4">
+									"By allowing users to test out NYC’s grid-style ballot before
+									heading to the polls, RankedVote offers voters a dynamic and
+									engaging education in the Do's and Don'ts of RCV.
+								</span>
+
+								The City of New York is a proud partner of RankedVote.”
+							</p>
+
+							<div class="text-center">
+								<img
+									src="./assets/images/testimonials/2.jpeg"
+									alt=""
+									width="100"
+									class="rounded-circle me-3 border border-2 border-white testimonial-img" />
+								<div class="text-silver-2 mt-3">
+									<p class="fs-6 mb-0">LAURA WOOD</p>
+									<p class="fs-6 mb-0">
+										NEW YORK CITY'S CHIEF DEMOCRACY OFFICER
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="slide">
+							<p class="fs-4 text-white text-center lh-sm">
+								"If your organization has any interest in RCV education, be sure
+								to include RankedVote in your toolkit."
+							</p>
+
+							<div class="text-center">
+								<img
+									src="./assets/images/testimonials/3.jpeg"
+									alt=""
+									width="100"
+									class="rounded-circle me-3 border border-2 border-white testimonial-img" />
+								<div class="text-silver-2 mt-3">
+									<p class="fs-6 mb-0">AHMED BUTT</p>
+									<p class="fs-6 mb-0">
+										CIVIC ENGAGEMENT COORDINATOR, ASIAN AMERICAN FEDERATION
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
+
+		<!-- Why Us Section -->
+		<section class="py-5 bg-white">
+			<div class="container">
+				<h2
+					class="text-center fs-6 fw-bold text-light-slate-grey text-uppercase">
+					WHY RANKED CHOICE VOTING WORKS
+				</h2>
+				<p class="text-center fs-1 fs-bolder text-midnight-blue">
+					Better decisions, faster.
+				</p>
+
+				<div class="seperator"></div>
+
+				<div class="row mt-5">
+					<div
+						class="col-md-6 d-flex flex-column justify-content-center text-dark-slate-blue pe-5">
+						<p class="fs-6">
+							Any time you're making a decision with more than two choices,
+							ranked choice voting is the right tool for the job. It uncovers
+							your audience's preferences with greater accuracy and fidelity
+							than traditional voting methods.
+							<a href="#" class="poll-link">Create a poll</a> to see how.
+						</p>
+						<div>
+							<h4 class="fs-6 text-bold text-light-slate-grey">
+								KEY ADVANTAGES OF RANKED CHOICE VOTING
+							</h4>
+							<ul class="list-unstyled fs-5">
+								<li class="d-flex align-items-center mb-2">
+									<img
+										src="./assets/images/icons/tick.svg"
+										alt=""
+										width="15"
+										class="me-3" />
+									<p class="mb-0 text-dark-slate-blue">
+										Determines the choices with the strongest support
+									</p>
+								</li>
+								<li class="d-flex align-items-center mb-2">
+									<img
+										src="./assets/images/icons/tick.svg"
+										alt=""
+										width="15"
+										class="me-3" />
+									<p class="mb-0 text-dark-slate-blue">
+										Eliminates the need for multiple decision rounds
+									</p>
+								</li>
+								<li class="d-flex align-items-center mb-2">
+									<img
+										src="./assets/images/icons/tick.svg"
+										alt=""
+										width="15"
+										class="me-3" />
+									<p class="mb-0 text-dark-slate-blue">Reduces vote gaming</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="col-md-6 mt-3 mt-md-0">
+						<div class="d-flex justify-content-end">
+							<img
+								src="./assets/images/section-2.svg"
+								alt=""
+								class="img-fluid rounded-3 shadow-lg"
+								width="600" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="py-5 bg-blue-violet">
+			<div class="container pt-5">
+				<div
+					class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+					<div class="text-white">
+						<h2 class="fs-6 fw-bold text-ghost-white mb-0">
+							GET STARTED IN MINUTES...
+						</h2>
+						<p class="display-4">Poll your voters now</p>
+					</div>
+					<div class="ms-md-auto">
+						<a
+							href="#"
+							class="btn btn-midnight-blue text-white rounded-5 px-5 py-2">
+							Get Started
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer Section -->
+		<footer class="py-5 bg-white">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-md-4 text-center text-md-start">
+						<img
+							src="./assets/images/logo.svg"
+							alt=""
+							width="200"
+							class="d-inline-block align-text-top" />
+						<p class="fs-6 text-dark-slate-blue mt-3">
+							©2024 RankedVote, LLC. All rights reserved.
+						</p>
+
+						<div
+							class="d-flex align-items-center justify-content-center justify-content-md-start">
+							<a href="#" class="footer-icon me-3">
+								<img
+									src="./assets/images/icons/twitter.svg"
+									alt=""
+									width="20" />
+							</a>
+							<a href="#" class="footer-icon">
+								<img
+									src="./assets/images/icons/linkedin.svg"
+									alt=""
+									width="20" />
+							</a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="row justify-content-end text-center">
+							<div class="col-md-2 mx-0 mx-md-3 mt-4 mt-md-0">
+								<h5 class="fs-6 fw-bold text-dark-blue mb-3">App</h5>
+								<ul class="list-unstyled">
+									<li>
+										<a href="#" class="text-dark-slate-blue">Features </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Pricing </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Demo </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Extension </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Sign Up</a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-2 mx-0 mx-md-3 mt-4 mt-md-0">
+								<h5 class="fs-6 fw-bold text-dark-blue mb-3">Solutions</h5>
+								<ul class="list-unstyled">
+									<li>
+										<a href="#" class="text-dark-slate-blue">Run Contests </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Make Decisions </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Educate Voters </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue"
+											>Team Collaboration
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Bulk Programs </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue"
+											>Success Stories
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Bulk Programs </a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-2 mx-0 mx-md-3 mt-4 mt-md-0">
+								<h5 class="fs-6 fw-bold text-dark-blue mb-3">Guides</h5>
+								<ul class="list-unstyled">
+									<li>
+										<a href="#" class="text-dark-slate-blue"
+											>Using RankedVote
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue"
+											>Understanding RCV
+										</a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Applying RCV </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">2024 Elections </a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">FAQ </a>
+									</li>
+								</ul>
+							</div>
+
+							<div class="col-md-2 mx-0 mx-md-3 mt-4 mt-md-0">
+								<h5 class="fs-6 fw-bold text-dark-blue mb-3">Company</h5>
+								<ul class="list-unstyled">
+									<li><a href="#" class="text-dark-slate-blue">About</a></li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Contact</a>
+									</li>
+									<li><a href="#" class="text-dark-slate-blue">Press</a></li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Terms</a>
+									</li>
+									<li>
+										<a href="#" class="text-dark-slate-blue">Privacy Policy</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+			integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+			integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+			crossorigin="anonymous"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				// Get all dropdowns
+				var dropdowns = document.querySelectorAll(".nav-item.dropdown");
+
+				// Loop through each dropdown
+				dropdowns.forEach(function (dropdown) {
+					// Get dropdown menu
+					var dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+					// Show dropdown menu on mouse enter
+					dropdown.addEventListener("mouseenter", function () {
+						dropdownMenu.classList.add("show");
+					});
+
+					// Hide dropdown menu on mouse leave
+					dropdown.addEventListener("mouseleave", function () {
+						dropdownMenu.classList.remove("show");
+					});
+				});
+			});
+		</script>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			const swiper = new Swiper(".swiper", {
+				// Optional parameters
+				direction: "horizontal",
+				loop: true,
+
+				// Navigation arrows
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+
+		<!-- Typed JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+		<script>
+			var typed = new Typed(".typed-words", {
+				strings: [
+					"running contests",
+					"selecting leaders",
+					"conducting surveys",
+					"taking polls",
+					"educating voters",
+					"making decisions",
+				],
+				typeSpeed: 40,
+				backSpeed: 50,
+				backDelay: 1800,
+				startDelay: 3000,
+				loop: true,
+				showCursor: false,
+				cursorChar: "|",
+				attr: null,
+				fadeOut: true,
+				fadeOutClass: "typed-fade-out",
+				fadeOutDelay: 300,
+			});
+		</script>
+	</body>
+</html>
